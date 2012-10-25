@@ -1,0 +1,142 @@
+body {
+	margin: 0;
+	padding: 0;
+	text-align:center;
+	background-color: #d0e7f9;
+}
+
+#sky {
+position: fixed;
+top: 0;
+left: 0;
+z-index: -1;
+}
+
+#stage {
+outline: 0;
+margin: 3em auto;
+}
+
+#title, #splash {
+position: absolute;
+top: 100px;
+width: 100%;
+background-color: rgba(255, 255, 255, 0.8);
+cursor: pointer;
+}
+
+strong {
+display: inline-block;
+font-size: 2em;
+padding-top: 20px;
+}
+
+#info {
+	position: fixed;
+	left: 0;
+	width: 100%;
+	background-color: rgba(255, 255, 255, .5);
+	margin: 0;
+	padding: .5em 0;
+	z-index: 99;
+}
+
+#level {
+	display: block;
+	float: left;
+	margin: 0 .5em;
+}
+
+.baritem {
+	display: none;
+	float: right;
+	text-align: right;
+	margin: 0 10px 0 30px;
+	cursor: pointer;
+	position: relative;
+}
+
+.baritem:before {
+	position: absolute;
+	content: "";
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	background-color: #000;
+	box-shadow: inset 0 0 3px #DA4930;
+	top: 2px;
+	left: -25px;
+}
+
+.baritem:after {
+	position: absolute;
+	content: "";
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	background-color: rgba(255, 255, 255, 0.1);
+	box-shadow: inset 0 0 3px #ddd;
+	top: 2px;
+	left: -25px;
+}
+
+#music.melody:before {
+	background-color: rgba(218, 73, 48, 1);
+	box-shadow: 0 0 5px rgba(218, 73, 48, 0.7);
+}
+
+:full-screen#fullscreen:before {
+	background-color: rgba(218, 73, 48, 1);
+	box-shadow: 0 0 5px rgba(218, 73, 48, 0.7);
+}
+
+:-moz-full-screen #fullscreen:before {
+	background-color: rgba(218, 73, 48, 1);
+	box-shadow: 0 0 5px rgba(218, 73, 48, 0.7);
+}
+
+:-webkit-full-screen #fullscreen:before {
+	background-color: rgba(218, 73, 48, 1);
+	box-shadow: 0 0 5px rgba(218, 73, 48, 0.7);
+}
+
+ul {
+	list-style-type: none;
+	position: fixed;
+	width: 100%;
+	background-color: rgba(255, 255, 255, .5);
+	margin: 0;
+	padding: .5em 0;
+	left: 0;
+	bottom: 0;
+	z-index: 99;
+	display: none;
+}
+
+li {
+display: inline-block;
+margin: .3em .3em;
+}
+
+kbd {
+padding: 2px 4px;
+white-space: nowrap;
+color: black;
+background: #EEE;
+border-width: 1px 3px 3px 1px;
+border-style: solid;
+border-color: 	#CCC #AAA #888 #BBB;
+margin-right: .3em;
+}
+
+#control.enable #reset, #control.enable #next, #control.enable #prev, #control.enable #undo {
+cursor: pointer;
+}
+
+.show {
+display: block;
+}
+
+.hidden {
+display: none;
+}
